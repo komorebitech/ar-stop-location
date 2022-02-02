@@ -25,10 +25,11 @@ function renderPlaces(latitude, longitude) {
         `latitude: ${latitude}; longitude: ${longitude};`
     );
     model.setAttribute("gltf-model", "./assets/pole/pole_v2.gltf");
-    model.setAttribute("rotation", "270 180 270");
+    model.setAttribute("rotation", "270 90 270");
     model.setAttribute("animation-mixer", "");
     // model.setAttribute("scale", "1 1 1");
     // model.setAttribute("position", "0 -2 0");
+    model.object3D.position.y -= 5;
 
     model.addEventListener("loaded", () => {
         window.dispatchEvent(new CustomEvent("gps-entity-place-loaded"));
