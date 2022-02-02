@@ -25,7 +25,7 @@ function renderPlaces(latitude, longitude) {
         `latitude: ${latitude}; longitude: ${longitude};`
     );
     model.setAttribute("gltf-model", "./assets/pole/pole_v2.gltf");
-    model.setAttribute("rotation", "90 180 0");
+    model.setAttribute("rotation", "90 180 90");
     model.setAttribute("animation-mixer", "");
     model.setAttribute("scale", "10 10 10");
     model.setAttribute("position", "0 0 0");
