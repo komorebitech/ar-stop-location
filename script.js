@@ -29,7 +29,7 @@ function renderPlaces(latitude, longitude) {
     model.setAttribute("animation-mixer", "");
     // model.setAttribute("scale", "1 1 1");
     // model.setAttribute("position", "0 -2 0");
-    model.object3D.position.y = 9000;
+    model.object3D.position.y = -3000;
 
     model.addEventListener("loaded", () => {
         window.dispatchEvent(new CustomEvent("gps-entity-place-loaded"));
