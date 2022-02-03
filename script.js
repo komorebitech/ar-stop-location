@@ -29,6 +29,7 @@ function renderPlaces(latitude, longitude) {
     model.setAttribute("rotation", "270 270 270");
     model.setAttribute("animation-mixer", "");
     model.setAttribute("scale", "0.3 0.3 0.3");
+    model.setAttribute("cursor-listener");
     // model.setAttribute("position", "0 -2 0");
     model.object3D.position.y = -90;
 
