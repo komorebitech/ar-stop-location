@@ -36,7 +36,7 @@ function renderPlaces(latitude, longitude) {
         window.dispatchEvent(new CustomEvent("gps-entity-place-loaded"));
     });
 
-    model.addEventListener("click", () => {
+    model.addEventListener("click", function(evt) {
         alert("Model clicked.")
     });
 
