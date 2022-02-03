@@ -30,7 +30,7 @@ function renderPlaces(latitude, longitude) {
     model.setAttribute("animation-mixer", "");
     model.setAttribute("scale", "0.3 0.3 0.3");
     model.setAttribute("cursor-listener");
-    model.setAttribute("class","clickable");
+    model.classList.add("clickable");
     // model.setAttribute("position", "0 -2 0");
     model.object3D.position.y = -90;
 
